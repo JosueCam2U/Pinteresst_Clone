@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterests</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- BARRA LATERAL IZQUIERDA -->
+    <aside class="sidebar">
+        <nav class="sidebar-nav">
+            <h2 class="pinterest-logo">
+                <img src="https://cdn.pixabay.com/photo/2022/01/11/15/02/pinterest-6930796_1280.png" alt="Pinterest">
+            </h2>
+            
+            <!-- LISTA PRINCIPAL DE NAVEGACIÓN -->
+            <ul class="nav-list">
+                <li><a href="index.html" class="active">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1946/1946436.png" alt="Inicio" class="nav-icon">
+                </a></li>
+                <li><a href="#">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2957/2957599.png" alt="Explorar" class="nav-icon">
+                </a></li>
+                <li><a href="#">
+                    <img src="https://cdn-icons-png.flaticon.com/128/10758/10758747.png" alt="Tablero" class="nav-icon">
+                </a></li>
+                <li><a href="subir.html">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3161/3161837.png" alt="Crear" class="nav-icon">
+                </a></li>
+                <li><a href="#">
+                    <img src="https://cdn-icons-png.flaticon.com/128/4991/4991422.png" alt="Notificaciones" class="nav-icon">
+                </a></li>
+                <li><a href="#">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1370/1370907.png" alt="Mensajes" class="nav-icon">
+                </a></li>
+            </ul>
+
+            <!-- CONFIGURACIÓN - SEPARADA FUERA DE LA LISTA, ABAJO -->
+            <div class="config-wrapper">
+                <a href="#" class="config-link">
+                    <img src="https://cdn-icons-png.flaticon.com/128/561/561135.png" alt="Configuración" class="nav-icon">
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- BARRA SUPERIOR -->
+    <header class="top-bar">
+        <nav class="top-nav">
+            <form class="search-form" role="search">
+                <div class="search-container">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2319/2319177.png" alt="Buscar" class="search-icon-left">
+                    <input type="text" id="buscar" class="search-input" placeholder="Buscar">
+                    <img src="https://cdn-icons-png.flaticon.com/128/18944/18944431.png" alt="Subir imagen" class="search-icon-right">
+                </div>
+            </form>
+
+            <ul class="account-menu">
+                <li class="account-item">
+                    <img src="https://cdn-icons-png.flaticon.com/128/6676/6676016.png" alt="Avatar" class="avatar">
+                    <ul class="dropdown">
+                        <li><a href="#">Personal</a></li>
+                        <li><a href="#">Convertir en cuenta para empresa</a></li>
+                        <li><a href="#">Tus cuentas</a></li>
+                        <li><a href="#">Agregar cuenta de Pinterest</a></li>
+                        <li><a href="login.html">Salir</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+        <section class="fotos-links">
+            <a href="contenido.html?img=fotos/skate.jpg">
+                <img src="fotos/skate.jpg" alt="skate">
+            </a>
+            <a href="contenido.html?img=fotos/sakte1.jpg">
+                <img src="fotos/sakte1.jpg" alt="skate10">
+            </a>
+            <a href="contenido.html?img=fotos/skate10.jpg">
+                <img src="fotos/skate10.jpg" alt="skate12">
+            </a>
+            <a href="contenido.html?img=fotos/skate11.jpg">
+                <img src="fotos/skate11.jpg" alt="skate13">
+            </a>
+            <a href="contenido.html?img=fotos/skate12.jpg">
+                <img src="fotos/skate12.jpg" alt="skate4">
+            </a>
+            <a href="contenido.html?img=fotos/skate13.jpg">
+                <img src="fotos/skate13.jpg" alt="skate2">
+            </a>
+            <a href="contenido.html?img=fotos/skate2.jpg">
+                <img src="fotos/skate2.jpg" alt="skate4">
+            </a>
+            <a href="contenido.html?img=fotos/skate3.jpg">
+                <img src="fotos/skate3.jpg" alt="skate5">
+            </a>
+            <a href="contenido.html?img=fotos/skate4.jpg">
+                <img src="fotos/skate4.jpg" alt="skate6">
+            </a>
+            <a href="contenido.html?img=fotos/skate4.webp">
+                <img src="fotos/skate4.webp" alt="skate7">
+            </a>
+            <a href="contenido.html?img=fotos/skate5.jpg">
+                <img src="fotos/skate5.jpg" alt="skate9">
+            </a>
+            <a href="contenido.html?img=fotos/skate6.jpg">
+                <img src="fotos/skate6.jpg" alt="sakte1">
+            </a>
+            <a href="contenido.html?img=fotos/skate7.jpg">
+                <img src="fotos/skate7.jpg" alt="skate11">
+            </a>
+            <a href="contenido.html?img=fotos/skate9.jpg">
+                <img src="fotos/skate9.jpg" alt="skaate3">
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Creado por Josue 2026</p>
+    </footer>
+
+    <script>
+        const imagenes = document.querySelectorAll('.fotos-links img');
+        imagenes.forEach((img, index) => {
+            const delay = (index + 1) * 0.05;
+            img.style.animationDelay = `${delay}s`;
+        });
+    </script>
+</body>
+</html>
