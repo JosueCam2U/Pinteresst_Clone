@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterests - Contenido</title>
+    <link rel="stylesheet" href="contenido.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <nav class="sidebar-nav">
+            <h2 class="pinterest-logo">
+                <img src="https://cdn.pixabay.com/photo/2022/01/11/15/02/pinterest-6930796_1280.png" alt="Pinterest">
+            </h2>
+            <ul class="nav-list">
+                <li><a href="index.html">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1946/1946436.png" alt="Inicio" class="nav-icon">
+                </a></li>
+                <li><a href="#">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2957/2957599.png" alt="Explorar" class="nav-icon">
+                </a></li>
+                <li><a href="#">
+                    <img src="https://cdn-icons-png.flaticon.com/128/10758/10758747.png" alt="Tablero" class="nav-icon">
+                </a></li>
+                <li><a href="subir.html">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3161/3161837.png" alt="Crear" class="nav-icon">
+                </a></li>
+                <li><a href="#">
+                    <img src="https://cdn-icons-png.flaticon.com/128/4991/4991422.png" alt="Notificaciones" class="nav-icon">
+                </a></li>
+                <li><a href="#">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1370/1370907.png" alt="Mensajes" class="nav-icon">
+                </a></li>
+            </ul>
+            <div class="config-wrapper">
+                <a href="#" class="config-link">
+                    <img src="https://cdn-icons-png.flaticon.com/128/561/561135.png" alt="Configuración" class="nav-icon">
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <header class="top-bar">
+        <nav class="top-nav">
+            <form class="search-form" role="search">
+                <div class="search-container">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2319/2319177.png" alt="Buscar" class="search-icon-left">
+                    <input type="text" id="buscar" class="search-input" placeholder="Buscar">
+                    <img src="https://cdn-icons-png.flaticon.com/128/18944/18944431.png" alt="Subir imagen" class="search-icon-right">
+                </div>
+            </form>
+            <ul class="account-menu">
+                <li class="account-item">
+                    <img src="https://cdn-icons-png.flaticon.com/128/6676/6676016.png" alt="Avatar" class="avatar">
+                    <ul class="dropdown">
+                        <li><a href="#">Personal</a></li>
+                        <li><a href="#">Convertir en cuenta para empresa</a></li>
+                        <li><a href="#">Tus cuentas</a></li>
+                        <li><a href="#">Agregar cuenta de Pinterest</a></li>
+                        <li><a href="login.html">Salir</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- COLUMNA IZQUIERDA: IMAGEN + INFO DEBAJO -->
+        <section class="columna-izquierda">
+            <figure class="imagen-principal">
+                <img src="fotos/skate.jpg" alt="Imagen seleccionada" id="imagen-detalle">
+                <figcaption class="overlay-bar">
+                    <div class="perfil-info">
+                        <img src="https://cdn-icons-png.flaticon.com/128/6676/6676016.png" alt="Perfil" class="perfil-avatar-small">
+                        <span class="perfil-nombre">Perfil</span>
+                        <span class="perfil-flecha">▼</span>
+                    </div>
+                    <button class="btn-guardar">Guardar</button>
+                </figcaption>
+            </figure>
+
+            <!-- ACCIONES DEBAJO DE LA IMAGEN -->
+            <ul class="acciones-lista">
+                <li>
+                    <button class="accion-btn">
+                        <img src="https://cdn-icons-png.flaticon.com/128/535/535285.png" alt="Me gusta">
+                        <span>Me gusta</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="accion-btn">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1370/1370907.png" alt="Comentar">
+                        <span>Comentar</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="accion-btn">
+                        <img src="https://cdn-icons-png.flaticon.com/128/8113/8113021.png" alt="Compartir">
+                        <span>Compartir</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="accion-btn">
+                        <img src="https://cdn-icons-png.flaticon.com/128/512/512142.png" alt="Más">
+                        <span>Más</span>
+                    </button>
+                </li>
+            </ul>
+
+            <!-- USUARIO -->
+            <div class="usuario-wrapper">
+                <img src="https://cdn-icons-png.flaticon.com/128/6676/6676016.png" alt="Avatar usuario" class="usuario-avatar">
+                <div class="usuario-datos">
+                    <p class="usuario-nombre" data-field="username">Texto Maquetado</p>
+                    <p class="usuario-fecha" data-field="fecha">Hace 2 días</p>
+                </div>
+            </div>
+
+            <hr class="separador">
+
+            <!-- COMENTARIOS MAQUETADOS -->
+            <section class="comentarios-lista">
+                <article class="comentario-item" data-comment-id="1">
+                    <p>
+                        <strong data-field="comment-author">Texto Maquetado</strong>
+                        <span data-field="comment-content">Texto Maquetado</span>
+                    </p>
+                </article>
+                <article class="comentario-item" data-comment-id="2">
+                    <p>
+                        <strong data-field="comment-author">Texto Maquetado</strong>
+                        <span data-field="comment-content">Texto Maquetado</span>
+                    </p>
+                </article>
+                <article class="comentario-item" data-comment-id="3">
+                    <p>
+                        <strong data-field="comment-author">Texto Maquetado</strong>
+                        <span data-field="comment-content">Texto Maquetado</span>
+                    </p>
+                </article>
+                <p class="comentario-desactivados" data-field="comments-disabled">Comentarios.</p>
+            </section>
+        </section>
+
+        <!-- COLUMNA DERECHA: MÁS IMÁGENES RELACIONADAS -->
+        <aside class="columna-derecha">
+            <h2 class="recomendaciones-titulo">Más ideas para ti</h2>
+            <ul class="galeria-relacionada">
+                <li>
+                    <a href="contenido.html?img=fotos/skate2.jpg">
+                        <img src="fotos/skate2.jpg" alt="Relacionado 1">
+                    </a>
+                </li>
+                <li>
+                    <a href="contenido.html?img=fotos/skate3.jpg">
+                        <img src="fotos/skate3.jpg" alt="Relacionado 2">
+                    </a>
+                </li>
+                <li>
+                    <a href="contenido.html?img=fotos/skate4.jpg">
+                        <img src="fotos/skate4.jpg" alt="Relacionado 3">
+                    </a>
+                </li>
+                <li>
+                    <a href="contenido.html?img=fotos/skate5.jpg">
+                        <img src="fotos/skate5.jpg" alt="Relacionado 4">
+                    </a>
+                </li>
+                <li>
+                    <a href="contenido.html?img=fotos/skate6.jpg">
+                        <img src="fotos/skate6.jpg" alt="Relacionado 5">
+                    </a>
+                </li>
+                <li>
+                    <a href="contenido.html?img=fotos/skate7.jpg">
+                        <img src="fotos/skate7.jpg" alt="Relacionado 6">
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <p>Creado por Josue 2026</p>
+    </footer>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const imgSrc = urlParams.get('img');
+        if (imgSrc) {
+            const imgElement = document.getElementById('imagen-detalle');
+            if (imgElement) {
+                imgElement.src = decodeURIComponent(imgSrc);
+            }
+        }
+    </script>
+</body>
+</html>
